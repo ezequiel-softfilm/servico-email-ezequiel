@@ -73,7 +73,7 @@ npm run start:dev
 4. O servidor estará disponível em:
 
 ```
-http://localhost:3000
+http://localhost:3001
 ```
 
 ---
@@ -95,7 +95,7 @@ Envia um e-mail para o destinatário informado no corpo da requisição.
 
 ### 📦 Exemplo de requisição
 
-**POST:** `http://localhost:3000/mail/send`
+**POST:** `http://localhost:3001/mail/send`
 **Headers:**
 
 ```
@@ -140,7 +140,7 @@ Content-Type: application/json
 ## 🧑‍💻 Exemplo de uso com `fetch` (JavaScript)
 
 ```javascript
-fetch("http://localhost:3000/mail/send", {
+fetch("http://localhost:3001/mail/send", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -162,7 +162,7 @@ fetch("http://localhost:3000/mail/send", {
 ## 🧪 Testando com cURL
 
 ```bash
-curl -X POST http://localhost:3000/mail/send \
+curl -X POST http://localhost:3001/mail/send \
   -H "Content-Type: application/json" \
   -d '{
     "to": "destinatario@exemplo.com",
